@@ -1,0 +1,15 @@
+{
+  "name": "Random CodePen On New Tab",
+  "version": "0.0.0.1",
+  "description": "Random codepen on new tab",
+  "manifest_version": 2,
+  "browser_action": {
+
+  },
+  "icons": { "16": "codepen.png",
+    "48": "codepen.png",
+   "128": "codepen.png" },
+  "chrome_url_overrides" : {
+    "newtab": "frame.html"
+  }
+}
