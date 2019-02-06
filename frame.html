@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Code Pen Yo!</title>
+    <title>Popular CodePen Projects!</title>
     <script src="main.js"></script>
     <style>
     body {
@@ -15,11 +15,46 @@ iframe {
   width:calc(100vw - 4px);
   box-sizing: border-box;
 }
+#overlay {
+    background-color: #e8e8e8;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    top: 0px;
+    left: 0;
+    position: absolute;
+}
+.child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#loading {
+  height:150px;
+    width:150px;
+    -webkit-animation: Yrotation 1.75s infinite linear;
+}
+@-webkit-keyframes Yrotation {
+		from {
+        -webkit-transform: rotateY(0deg);
+		}
+		to {
+        -webkit-transform: rotateY(359deg);
+		}
+}
     </style>
 </head>
 <body>
+    <main id="overlay">
+  
+        <div class="child" style="color:white">
+            <img id="loading" src="codepen.png">
+        </div>
+        
+      </main>
         <iframe scrolling='no' id="core" src=''
-         frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/pieter-biesemans/pen/NMwXXN/'>Animating with SCSS @random() and for loops - 3D</a> by Pieter Biesemans (<a href='https://codepen.io/pieter-biesemans'>@pieter-biesemans</a>) on <a href='https://codepen.io'>CodePen</a>.
+         frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
         </iframe>
 </body>
 </html>
